@@ -3,7 +3,7 @@ import pandas as pd
 from pathlib import Path
 import os
 
-with st.container(width=1900, horizontal_alignment='left'):
+with st.container(width=1900, horizontal_alignment='left', height=900):
     st.title("Powody wypadków w dzielnicach Nowego Yorku")
     path_to_csv = os.path.join(os.getcwd(), Path(__file__).parent.parent, "data\\dane_przetworzone.csv")
     data = pd.read_csv(path_to_csv, low_memory=False)
@@ -30,14 +30,14 @@ with st.container(width=1900, horizontal_alignment='left'):
     pivot_table_final = pd.concat([pivot_table_first_10, pivot_table_other], ignore_index=False)
     tab_value, tab_to_100 = st.tabs(["Wykres wartości", "Wykres do 100 %"])
     with tab_value:
-        st.bar_chart(pivot_table_final.T)
+        st.bar_chart(pivot_table_final.T, height=650)
         with st.expander(label='Dane Tabelaryczne'):
             st.dataframe(pivot_table_final)
     with tab_to_100:
         pivot_sum = pivot_table_final.cumsum()
         pivot_sum = pivot_sum.iloc[-1]
         pivot_devided = pivot_table_final.div(pivot_sum, axis=1) *100
-        st.bar_chart(pivot_devided.T)
+        st.bar_chart(pivot_devided.T, height=650)
         with st.expander(label='Dane Tabelaryczne'):
             st.dataframe(pivot_devided)
 
