@@ -1,0 +1,10 @@
+[project]
+name = "pracadyplomowaanalitykadanych"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.13"
+dependencies = [
+    "ipykernel>=7.2.0",
+    "pandas>=3.0.3",
+    "streamlit>=1.57.0",
+]
