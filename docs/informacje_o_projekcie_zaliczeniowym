@@ -8,13 +8,13 @@
 
     Analiza danych dotyczących wypadków samochodowych w NY która powinna zawierać:
     ( można uzyc jupyter notebook w pełni lub zastosowac OOP + jupyter (rekomendowane))
-        3.1. Sprawdzenie danych, opisanie ich i przygotowanie
+        3.1. Sprawdzenie danych, opisanie ich i przygotowanie - zrobione
         3.2. Określenie najniebezpieczniejszych czynników wypadków w każdej z dzielnic NY
         3.3. Zaprezentowanie, ile zgonów oraz obrażeń zostało spowodowanych przez szybką jazdę w
-            danej dzielnicy
+            danej dzielnicy - zrobione
         3.4. Określenie 3 najczęstszych czynników wypadków z podziałem na dzielnice oraz ogółem dla
-            całego miasta
-        3.5 Określenie jakie pojazdy (typy) najczęściej uczestniczyły w wypadkach
+            całego miasta - zrobione
+        3.5 Określenie jakie pojazdy (typy) najczęściej uczestniczyły w wypadkach - zrobione
         3.6. Zestawienie ilości wypadków dla każdej z dzielnic - zrobione
         3.7. Zaprezentowanie najczęstszych miejsc wystąpień wypadków - zrobione
         3.8. Wnioski
