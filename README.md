@@ -4,7 +4,7 @@
 - Python `>=3.13`
 - `uv`
 
-## 1. Instalacja `uv` (zależnie od platformy)
+## 1. Instalacja `uv`
 
 ### Windows (PowerShell)
 ```powershell
@@ -16,19 +16,19 @@ irm https://astral.sh/uv/install.ps1 | iex
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
-Po instalacji sprawdź:
+Sprawdzenie instalacji:
 ```bash
 uv --version
 ```
 
-## 2. Utworzenie i aktywacja środowiska
+## 2. Srodowisko i zaleznosci
 
 W katalogu projektu:
 ```bash
 uv venv
 ```
 
-Aktywacja środowiska:
+Aktywacja srodowiska:
 
 ### Windows (PowerShell)
 ```powershell
@@ -45,50 +45,43 @@ Aktywacja środowiska:
 source .venv/bin/activate
 ```
 
-Instalacja zależności:
+Instalacja zaleznosci:
 ```bash
 uv sync
 ```
 
-## 3. Dane wejściowe
+## 3. Dane wejsciowe
 
-Dane muszą znajdować się w katalogu `data/` pod poprawną nazwą:
+W katalogu `data/` musi byc plik:
 
-- `data/dane_projektowe_ny_collisions.csv` (plik wejściowy)
+- `data/dane_projektowe_ny_collisions.csv`
 
-Po przygotowaniu danych powstaje:
+## 4. Czyszczenie danych (`czyszczenie_danych_2.ipynb`)
 
-- `data/dane_przetworzone.csv`
-
-## 4. Przygotowanie danych w Jupyter
-
-Nowa wersja projektu do oddania w Jupyterze korzysta z notebooka:
-
-- `czyszczenie_danych_2.ipynb`
-
-Najprościej:
+Uruchom notebook:
 ```bash
 uv run jupyter notebook czyszczenie_danych_2.ipynb
 ```
 
-Następnie wykonaj wszystkie komórki notebooka (`Run All`), aby utworzyć:
+Nastepnie wykonaj wszystkie komorki (`Run All`). Notebook tworzy:
 
 - `data/dane_przetworzone_2.csv`
 - `data/dane_pojazdy_przyczyny_2.csv`
 - `data/raport_czyszczenia_2.csv`
 
-## 5. Analiza danych w Jupyter
+## 5. Analiza danych (`analiza_danych.ipynb`)
 
-Po przygotowaniu danych uruchom:
+Po czyszczeniu danych uruchom:
 
 ```bash
 uv run jupyter notebook analiza_danych.ipynb
 ```
 
-Notebook `analiza_danych.ipynb` zawiera analizę według punktów z `docs/informacje_o_projekcie_zaliczeniowym`.
+Notebook zawiera analize zgodna z wymaganiami w `docs/informacje_o_projekcie_zaliczeniowym`.
 
-## 6. Uruchomienie aplikacji Streamlit
+## 6. Aktualny sposob pracy
 
-```bash
-uv run streamlit run report_app.py
-```
+Projekt jest obecnie realizowany w notebookach:
+
+- `czyszczenie_danych_2.ipynb`
+- `analiza_danych.ipynb`
