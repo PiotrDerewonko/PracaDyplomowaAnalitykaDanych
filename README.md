@@ -60,20 +60,34 @@ Po przygotowaniu danych powstaje:
 
 - `data/dane_przetworzone.csv`
 
-## 4. Przygotowanie danych
+## 4. Przygotowanie danych w Jupyter
 
-Przed uruchomieniem aplikacji uruchom plik:
+Nowa wersja projektu do oddania w Jupyterze korzysta z notebooka:
 
-- `przygotowanie_danych.ipynb`
+- `czyszczenie_danych_2.ipynb`
 
 Najprościej:
 ```bash
-uv run jupyter notebook przygotowanie_danych.ipynb
+uv run jupyter notebook czyszczenie_danych_2.ipynb
 ```
 
-Następnie wykonaj wszystkie komórki notebooka (`Run All`), aby uporządkować dane.
+Następnie wykonaj wszystkie komórki notebooka (`Run All`), aby utworzyć:
 
-## 5. Uruchomienie aplikacji Streamlit
+- `data/dane_przetworzone_2.csv`
+- `data/dane_pojazdy_przyczyny_2.csv`
+- `data/raport_czyszczenia_2.csv`
+
+## 5. Analiza danych w Jupyter
+
+Po przygotowaniu danych uruchom:
+
+```bash
+uv run jupyter notebook analiza_danych.ipynb
+```
+
+Notebook `analiza_danych.ipynb` zawiera analizę według punktów z `docs/informacje_o_projekcie_zaliczeniowym`.
+
+## 6. Uruchomienie aplikacji Streamlit
 
 ```bash
 uv run streamlit run report_app.py

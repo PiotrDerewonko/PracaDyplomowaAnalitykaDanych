@@ -78,6 +78,9 @@ target/
 # Jupyter Notebook
 .ipynb_checkpoints
 
+# Local project data - datasets are not published to GitHub.
+data/*.csv
+
 # IPython
 profile_default/
 ipython_config.py
