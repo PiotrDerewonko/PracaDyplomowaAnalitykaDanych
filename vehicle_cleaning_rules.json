@@ -1,0 +1,151 @@
+{
+  "vehicle_replacements": {
+    "SPORT UTILITY / STATION WAGON": [
+      "STATION WAGON/SPORT UTILITY VEHICLE",
+      "SPORT UTILITY/STATION WAGON"
+    ],
+    "PASSENGER VEHICLE": [
+      "PASSA",
+      "PASSE",
+      "PASS"
+    ],
+    "SEDAN": [
+      "2 DR SEDAN",
+      "4 DR SEDAN",
+      "SE",
+      "SEA",
+      "4D",
+      "4DR",
+      "4DS",
+      "4DSD"
+    ],
+    "PICK-UP TRUCK": [
+      "PICK",
+      "PICK-",
+      "PICKU",
+      "PK"
+    ],
+    "BOX TRUCK": [
+      "BOX",
+      "BOX T",
+      "BOXTR"
+    ],
+    "BICYCLE": [
+      "BIKE",
+      "BICYC",
+      "BK"
+    ],
+    "BUS": [
+      "BU"
+    ],
+    "VAN": [
+      "VN",
+      "VAB",
+      "VAN T",
+      "VAN/T",
+      "VAN CAMPER",
+      "VANETTE",
+      "VAN`"
+    ],
+    "TAXI": [
+      "TAXI CAB"
+    ],
+    "AMBULANCE": [
+      "AM",
+      "AMABU",
+      "AMB",
+      "AMBU",
+      "AMBUL"
+    ],
+    "FIRE TRUCK": [
+      "FD NY",
+      "FDNY",
+      "FIRE",
+      "FIRET"
+    ],
+    "MOPED": [
+      "MOPD",
+      "MO-PED",
+      "MOPEN",
+      "MOPET"
+    ],
+    "SCOOTER": [
+      "SCOO",
+      "SCOOT"
+    ],
+    "CONVERTIBLE": [
+      "CONV",
+      "CONVE"
+    ],
+    "DELIVERY": [
+      "DEL",
+      "DELIV",
+      "DELV",
+      "DELVI"
+    ],
+    "DUMP": [
+      "DP",
+      "DUMPS",
+      "DUMPT"
+    ],
+    "FLAT BED": [
+      "FLATB"
+    ],
+    "GARBAGE OR REFUSE": [
+      "GARBA"
+    ],
+    "TOW TRUCK / WRECKER": [
+      "TOW",
+      "TOW T",
+      "TOW TRUCK",
+      "TOW-T",
+      "TOWTR"
+    ],
+    "LARGE COM VEH(6 OR MORE TIRES)": [
+      "LADDE"
+    ],
+    "TRUCK": [
+      "TK"
+    ]
+  },
+  "noisy_vehicle_values": [
+    "00",
+    "1",
+    "994",
+    "72000",
+    "BLUE",
+    "BROWN",
+    "RED,",
+    "N/A",
+    "NA",
+    "UNK,",
+    "UNNKO",
+    "UNKNOWN",
+    "OTHER",
+    "NYC",
+    "GOV'T",
+    "GOV V",
+    "NEW Y",
+    "U HAU",
+    "U-TRU",
+    "UBER",
+    "TOYOT",
+    "CHEVR",
+    "GMC V",
+    "RAM",
+    "CAT",
+    "CAT 3",
+    "CAT 4",
+    "JCB40",
+    "JOHND",
+    "BED",
+    "BLOCK",
+    "BUMP",
+    "DIRT-",
+    "DIRTB",
+    "TRIAL",
+    "HOUSE",
+    "PISH",
+    "POST"
+  ]
+}
